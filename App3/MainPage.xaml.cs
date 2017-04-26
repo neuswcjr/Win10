@@ -50,6 +50,7 @@ namespace App3
 
 		private void OnFrameNavigating(object sender, NavigatingCancelEventArgs e)
 		{
+			//frame开始导航
 			string msg = "Frame navigating, SourcePageType = {0}";
 			System.Diagnostics.Debug.WriteLine(msg, e.SourcePageType);
 		}
