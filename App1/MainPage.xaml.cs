@@ -26,5 +26,21 @@ namespace App1
         {
             this.InitializeComponent();
         }
-    }
+
+		private void OnClick(object sender, RoutedEventArgs e)
+		{
+			if (txtID.Text == "" || txtName.Text == "" || txtAge.Text == "")
+			{
+				return;
+			}
+
+			Dictionary<string, string> data = new Dictionary<string, string>
+			{
+				{ "id", txtID.Text },
+				{ "name", txtName.Text },
+				{ "age", txtAge.Text }
+			};
+			this.Frame.Navigate(typeof(DisplayPage), data);
+		}
+	}
 }
