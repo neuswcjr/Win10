@@ -57,6 +57,7 @@ namespace App3
 
 		private void OnFrameNavigated(object sender, NavigationEventArgs e)
 		{
+			//frame已经导航到新页面
 			string msg = "Frame Navigated, SourcePageType = {0}";
 			System.Diagnostics.Debug.WriteLine(msg, e.SourcePageType);
 		}
